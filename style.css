@@ -1,0 +1,30 @@
+body {
+    margin: auto;
+}
+
+body header {
+    background-color: aliceblue;
+}
+body main {
+    background-color: white;
+}
+body footer {
+    background-color: blue;
+}
+
+
+.social-networks {
+    list-style-type: none;
+    text-align: center;
+}
+.social-networks-icons {
+    display: inline-block;
+    width: 75px;
+    height: auto;
+}
+.link-button {
+    color: white;
+}
+.link-button:hover {
+    color: orange;
+}
