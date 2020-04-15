@@ -8,24 +8,60 @@
       src="https://kit.fontawesome.com/7771bb0b2a.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
     <title>ITK</title>
   </head>
   <body>
     <header>
-      <h1 class="headline">
-        <a href="https://itk13201.github.io">ITK</a>
-      </h1>
-      <ul class="menu-list">
-        <li class="menu-list-item">
-          <a href="">About</a>
-        </li>
-        <li class="menu-list-item">
-          <a href="">Works</a>
-        </li>
-        <li class="menu-list-item">
-          <a href="">Blog</a>
-        </li>
-      </ul>
+      <div class="pc-menu-container">
+        <h1 class="headline">
+          <a href="https://itk13201.github.io">ITK</a>
+        </h1>
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a href="">Home</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">About</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">Works</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-menu-container">
+        <h1  class="headline">
+          <a href="https://itk13201.github.io">ITK</a>
+        </h1>
+        <script src="jQuery.js"></script>
+        <div id="nav-toggle">
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div id="gloval-nav">
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">Blog</a></li>
+              <!-- <li><a href="#">Contact</a></li> -->
+            </ul>
+          </nav>
+        </div>
+        <!-- /#gloval-nav -->
+      </div>
     </header>
     <main>
       <h1>e</h1>
@@ -46,13 +82,17 @@
       <h1>e</h1>
     </main>
     <footer>
-      <div id="social-platforms" >
-        <a class="btn btn-icon btn-twitter" href="https://twitter.com/tkik13201"
-        target="_blank"
+      <div id="social-platforms">
+        <a
+          class="btn btn-icon btn-twitter"
+          href="https://twitter.com/tkik13201"
+          target="_blank"
           ><i class="fab fa-twitter"></i><span>Twitter</span></a
         >
-        <a class="btn btn-icon btn-github" href="https://github.com/ITK13201"
-        target="_blank"
+        <a
+          class="btn btn-icon btn-github"
+          href="https://github.com/ITK13201"
+          target="_blank"
           ><i class="fab fa-github"></i><span>Github</span></a
         >
         <p>@2020</p>
