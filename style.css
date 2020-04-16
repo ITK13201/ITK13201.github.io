@@ -8,11 +8,12 @@ body {
 }
 
 header {
-  height: 80px;
+  height: 60px;
   width: 100%;
-  padding: 15px 0;
-  background-color: lightcyan;
+  padding: 10px 0;
+  background-color: white;
   color: black;
+  border-bottom: 1px solid gray;
 }
 
 footer {
@@ -154,17 +155,17 @@ footer {
   background: #007bb6;
 } */
 
-/*599px以下で適用する内容*/
-@media screen and (max-width: 599px) {
+/*799px以下で適用する内容*/
+@media screen and (max-width: 799px) {
   .pc-menu-container {
     display: none;
   }
 
   header .headline {
-    line-height: 80px;
+    line-height: 60px;
     float: left;
     font-size: 30px;
-    margin-left: 50px;
+    margin-left: 20%;
   }
   header .headline a {
     text-decoration: none;
@@ -301,26 +302,26 @@ footer {
   }
 }
 
-/*600px以上で適用する内容*/
-@media screen and (min-width: 600px) {
+/*800px以上で適用する内容*/
+@media screen and (min-width: 800px) {
   .mobile-menu-container {
     display: none;
   }
 
   header .headline {
-    line-height: 80px;
+    line-height: 60px;
     float: left;
     font-size: 30px;
-    margin-left: 200px;
+    margin-left: 20%;
   }
   header .headline a {
     text-decoration: none;
     color: black;
   }
   header .menu-list {
-    line-height: 80px;
+    line-height: 60px;
     float: right;
-    margin-right: 400px;
+    margin-right: 10%;
     list-style: none;
   }
   header .menu-list-item {
