@@ -182,7 +182,6 @@ main .text_column:nth-child(even) {
   display: block;
   height: 6px; /* 線幅 */
   margin-top: 5px;
-  position: relative;
 }
 .contents_wrapper {
   padding: 20px 0;
@@ -372,6 +371,16 @@ main .text_column:nth-child(even) {
 
 /*800px以上で適用する内容*/
 @media screen and (min-width: 800px) {
+  header {
+    position: sticky;
+    top: 0;
+  }
+
+  /* header固定で重ならないように */
+  html {
+    scroll-padding-top: 80px; /* 固定ヘッダの高さ分 */
+  }
+
   .mobile-menu-container {
     display: none;
   }
