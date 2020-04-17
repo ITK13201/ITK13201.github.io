@@ -13,6 +13,10 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700"
+      rel="stylesheet"
+    />
     <title>ITK</title>
   </head>
   <body>
@@ -23,9 +27,6 @@
         </h1>
         <ul class="menu-list">
           <li class="menu-list-item">
-            <a href="#">Home</a>
-          </li>
-          <li class="menu-list-item">
             <a href="#about">About</a>
           </li>
           <li class="menu-list-item">
@@ -33,6 +34,9 @@
           </li>
           <li class="menu-list-item">
             <a href="https://itk13201.hatenablog.com/" target="_blank">Blog</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -51,10 +55,10 @@
         <div id="gloval-nav">
           <nav>
             <ul>
-              <li><a href="https://itk13201.github.io/#home">Home</a></li>
-              <li><a href="https://itk13201.github.io/#about">About</a></li>
-              <li><a href="https://itk13201.github.io/#works">Works</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#works">Works</a></li>
               <li><a href="https://itk13201.hatenablog.com/">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
               <!-- <li><a href="#">Contact</a></li> -->
             </ul>
           </nav>
@@ -108,20 +112,42 @@
       </div>
     </main>
     <footer>
-      <div id="social-platforms">
-        <a
-          class="btn btn-icon btn-twitter"
-          href="https://twitter.com/tkik13201"
-          target="_blank"
-          ><i class="fab fa-twitter"></i><span>Twitter</span></a
-        >
-        <a
-          class="btn btn-icon btn-github"
-          href="https://github.com/ITK13201"
-          target="_blank"
-          ><i class="fab fa-github"></i><span>Github</span></a
-        >
-        <p>©2020 I.TK</p>
+      <div id="contact" class="text_column contact-container">
+        <h1 class="text_align">Contact</h1>
+        <div class="sns-wrapper">
+          <ul>
+            <li class="content">
+              <a
+                href="https://twitter.com/tkik13201"
+                class="sns-icon twitter"
+                title="Twitter"
+                target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li class="content">
+              <a
+                href="https://github.com/ITK13201"
+                class="sns-icon github"
+                title="Github"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li class="content">
+              <a
+                href="mailto:tkik13201@gmail.com?subject=Hello"
+                class="sns-icon email"
+                title="Email"
+                target="_self"
+                ><i class="far fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>©2020 I.TK</p>
+        </div>
       </div>
     </footer>
     <a href="#" class="page-top rounded position-bottom-right">
