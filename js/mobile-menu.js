@@ -22,8 +22,6 @@ var waveBtn = (function () {
       newRound.style.top = y + 'px';
       newRound.className += ' anim';
 
-      indicator.style.marginLeft = indi + (this.dataset.num - 1) * 150 + 'px';
-
       setTimeout(function () {
         newRound.remove();
       }, 1200);
