@@ -1,30 +1,11 @@
-var waveBtn = (function () {
-  'use strict';
-  var btn = document.querySelectorAll('.wave'),
-    tab = document.querySelector('.tab-bar'),
-    indicator = document.querySelector('.indicator'),
-    indi = 0;
-  indicator.style.marginLeft = indi + 'px';
-
-  for (var i = 0; i < btn.length; i++) {
-    btn[i].onmousedown = function (e) {
-      var newRound = document.createElement('div'),
-        x,
-        y;
-
-      newRound.className = 'cercle';
-      this.appendChild(newRound);
-
-      x = e.pageX - this.offsetLeft;
-      y = e.pageY - this.offsetTop;
-
-      newRound.style.left = x + 'px';
-      newRound.style.top = y + 'px';
-      newRound.className += ' anim';
-
-      setTimeout(function () {
-        newRound.remove();
-      }, 1200);
-    };
+var navPos = jQuery( '#tab-bar-container' ).offset().top; // グローバルメニューの位置
+var navHeight = jQuery( '#tab-bar-container' ).outerHeight(); // グローバルメニューの高さ
+jQuery( window ).on( 'scroll', function() {
+  if ( jQuery( this ).scrollTop() > navPos ) {
+    jQuery( 'body' ).css( 'padding-top', navHeight );
+    jQuery( '#tab-bar-container' ).addClass( 'm_fixed' );
+  } else {
+    jQuery( 'body' ).css( 'padding-top', 0 );
+    jQuery( '#tab-bar-container' ).removeClass( 'm_fixed' );
   }
-})();
+});

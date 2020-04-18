@@ -174,7 +174,7 @@ main .text_column:nth-child(even) {
   }
 
   header {
-    height: auto;
+    height: 100px;
     padding: 0;
     position: sticky;
   }
@@ -194,17 +194,35 @@ main .text_column:nth-child(even) {
     text-align: center;
   }
 
+  /* header固定で重ならないように */
+  html {
+    scroll-padding-top: 40px; /* 固定ヘッダの高さ分 */
+  }
+
+  #tab-bar-container {
+    width: 100%;
+  }
+
+  .m_fixed {
+    left: 0;
+    top: 0;
+    position: fixed;
+  }
+
   .tab-bar {
-    display: flex;
+    width: 100%;
+    display: block;
     padding: 0;
     list-style: none;
     text-decoration: none;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    font-size: 0;
   }
-  
+
   .tab {
     font-size: 13.5px;
-    width: 100%;
+    height: 20px;
+    width: 25%;
     padding: 7px 0;
     background: white;
     color: #607d8b;
@@ -215,38 +233,33 @@ main .text_column:nth-child(even) {
     flex-grow: 1;
     cursor: pointer;
     position: relative;
+    display: inline-block;
   }
   .tab a {
     text-decoration: none;
     list-style-type: none;
     color: #000;
+    display: block;
   }
-  
-  .indicator {
-    width: 100%;
-    height: 3px;
-    position: absolute;
-    margin-left: 0;
-  }
-  
+
   .cercle {
     width: 0px;
     height: 0px;
     position: absolute;
   }
-  
+
   .light .cercle {
     background: white;
   }
   .dark .cercle {
     background: black;
   }
-  
+
   .anim {
     opacity: 0.2;
     animation: touch 1.2s ease-out;
   }
-  
+
   @keyframes touch {
     100% {
       width: 600px;
@@ -266,7 +279,7 @@ main .text_column:nth-child(even) {
     top: 0;
     color: black;
     border-bottom: 1px solid gray;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   }
 
   /* header固定で重ならないように */
