@@ -8,6 +8,4 @@
 /build
 
 # misc
-*.json
-*.lock
-*.md
+
