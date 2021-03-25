@@ -2,6 +2,7 @@ import React from 'react'
 
 import Navbar from './components/Navbar'
 import MyAvatar from './components/Myavatar'
+import About from './components/About'
 import './App.scss'
 
 const App: React.FC = () => {
@@ -11,6 +12,8 @@ const App: React.FC = () => {
       <Navbar />
       {/* Avatar */}
       <MyAvatar />
+      {/* About */}
+      <About />
     </>
   )
 }
