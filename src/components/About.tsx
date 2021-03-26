@@ -82,13 +82,13 @@ const About: React.FC = () => {
     <>
       <Box p={1}>
         <Box display="flex" justifyContent="center" p={1}>
-          <Typography variant="h4" color="initial">
+          <Typography variant="h5" color="initial">
             About
           </Typography>
         </Box>
         <Box p={1}>
           <Box display="flex" justifyContent="center" p={1}>
-            <Typography variant="h5" color="initial">
+            <Typography variant="h6" color="initial">
               Belonging To
             </Typography>
           </Box>
@@ -100,7 +100,7 @@ const About: React.FC = () => {
         </Box>
         <Box p={1}>
           <Box display="flex" justifyContent="center" p={1}>
-            <Typography variant="h5" color="initial">
+            <Typography variant="h6" color="initial">
               Club
             </Typography>
           </Box>
