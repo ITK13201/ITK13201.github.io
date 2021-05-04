@@ -85,6 +85,13 @@ const PcNavbarList: React.FC = () => {
         <Button href="#skills">SKILLS</Button>
         <Button href="#works">WORKS</Button>
         <Button href="#contact">CONTACT</Button>
+        <Button
+          href="https://itk13201.hatenablog.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Blog
+        </Button>
       </List>
     </>
   )
