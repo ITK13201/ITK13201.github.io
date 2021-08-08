@@ -6,6 +6,7 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Works from './components/Works'
 import Contact from './components/Contact'
+import ScrollUp from './utils/ScrollUp'
 import './App.scss'
 
 const App: React.FC = () => {
@@ -35,6 +36,8 @@ const App: React.FC = () => {
       <section id="contact">
         <Contact />
       </section>
+
+      <ScrollUp />
     </>
   )
 }
