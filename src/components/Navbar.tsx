@@ -1,4 +1,6 @@
 import React from 'react'
+
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import {
   AppBar,
   Toolbar,
@@ -23,10 +25,15 @@ const useStyles = makeStyles((theme) => ({
   navbarTitle: {
     padding: '10px',
   },
+  navbarLink: {
+    textDecoration: 'none',
+    color: 'inherit',
+  },
 }))
 
 const SpNavbarList: React.FC = () => {
   const [anchorEl, setAnchorEl] = React.useState(null)
+  const classes = useStyles()
 
   const handleClick = (event: any) => {
     setAnchorEl(event.currentTarget)
@@ -53,23 +60,34 @@ const SpNavbarList: React.FC = () => {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose}>
-          <Link href="#about" color="inherit" underline="none">
+          <AnchorLink href="#about" className={classes.navbarLink}>
             ABOUT
-          </Link>
+          </AnchorLink>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link href="#skills" color="inherit" underline="none">
+          <AnchorLink href="#skills" className={classes.navbarLink}>
             SKILLS
-          </Link>
+          </AnchorLink>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link href="#works" color="inherit" underline="none">
+          <AnchorLink href="#works" className={classes.navbarLink}>
             WORKS
-          </Link>
+          </AnchorLink>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link href="#contact" color="inherit" underline="none">
+          <AnchorLink href="#contact" className={classes.navbarLink}>
             CONTACT
+          </AnchorLink>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link
+            href="https://itk13201.hatenablog.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={classes.navbarLink}
+            underline="none"
+          >
+            BLOG
           </Link>
         </MenuItem>
       </Menu>
@@ -78,19 +96,29 @@ const SpNavbarList: React.FC = () => {
 }
 
 const PcNavbarList: React.FC = () => {
+  const classes = useStyles()
+
   return (
     <>
       <List>
-        <Button href="#about">ABOUT</Button>
-        <Button href="#skills">SKILLS</Button>
-        <Button href="#works">WORKS</Button>
-        <Button href="#contact">CONTACT</Button>
+        <AnchorLink href="#about" className={classes.navbarLink}>
+          <Button>ABOUT</Button>
+        </AnchorLink>
+        <AnchorLink href="#skills" className={classes.navbarLink}>
+          <Button>SKILLS</Button>
+        </AnchorLink>
+        <AnchorLink href="#works" className={classes.navbarLink}>
+          <Button>WORKS</Button>
+        </AnchorLink>
+        <AnchorLink href="#contact" className={classes.navbarLink}>
+          <Button>CONTACT</Button>
+        </AnchorLink>
         <Button
           href="https://itk13201.hatenablog.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Blog
+          BLOG
         </Button>
       </List>
     </>

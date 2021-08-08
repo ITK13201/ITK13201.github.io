@@ -50,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-anchor-link-smooth-scroll": "^1.0.2",
     "onchange": "^7.1.0",
     "prettier": "2.2.1"
   }

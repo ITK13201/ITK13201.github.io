@@ -12,17 +12,29 @@ const App: React.FC = () => {
   return (
     <>
       {/* Navigation Bar */}
-      <Navbar />
+      <section>
+        <Navbar />
+      </section>
       {/* Avatar */}
-      <MyAvatar />
+      <section>
+        <MyAvatar />
+      </section>
       {/* About */}
-      <About />
+      <section id="about">
+        <About />
+      </section>
       {/* Skills */}
-      <Skills />
+      <section id="skills">
+        <Skills />
+      </section>
       {/* Works */}
-      <Works />
+      <section id="works">
+        <Works />
+      </section>
       {/* Contact */}
-      <Contact />
+      <section id="contact">
+        <Contact />
+      </section>
     </>
   )
 }
