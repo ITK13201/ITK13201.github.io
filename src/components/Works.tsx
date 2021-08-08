@@ -35,7 +35,11 @@ const Works: React.FC = () => {
         <Box display="flex" justifyContent="center" p={1}>
           <List className={classes.root}>
             <ListItem>
-              <ListItemLink href="https://misw-gamecenter.herokuapp.com/">
+              <ListItemLink
+                href="https://misw-gamecenter.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <ListItemAvatar>
                   <Avatar>
                     <FolderIcon />
@@ -48,7 +52,11 @@ const Works: React.FC = () => {
               </ListItemLink>
             </ListItem>
             <ListItem>
-              <ListItemLink href="https://github.com/ITK13201/private_diary">
+              <ListItemLink
+                href="https://github.com/ITK13201/private_diary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <ListItemAvatar>
                   <Avatar>
                     <FolderIcon />
@@ -61,7 +69,11 @@ const Works: React.FC = () => {
               </ListItemLink>
             </ListItem>
             <ListItem>
-              <ListItemLink href="https://github.com/ITK13201/ControlPDF">
+              <ListItemLink
+                href="https://github.com/ITK13201/ControlPDF"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <ListItemAvatar>
                   <Avatar>
                     <FolderIcon />
@@ -74,7 +86,11 @@ const Works: React.FC = () => {
               </ListItemLink>
             </ListItem>
             <ListItem>
-              <ListItemLink href="https://github.com/ITK13201/ITK13201.github.io">
+              <ListItemLink
+                href="https://github.com/ITK13201/ITK13201.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <ListItemAvatar>
                   <Avatar>
                     <FolderIcon />
